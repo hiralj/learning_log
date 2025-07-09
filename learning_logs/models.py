@@ -17,6 +17,7 @@ class Entry(models.Model):
     """Is it just cumulative or a sub-topic?"""
     topic = models.ForeignKey(Topic, on_delete=models.CASCADE)
     text = models.TextField()
+    doc = models.FileField(null=True, upload_to='documents/%Y/%m/%d/%H%M%S')
     date_added = models.DateTimeField(auto_now_add=True)
 
     class Meta:

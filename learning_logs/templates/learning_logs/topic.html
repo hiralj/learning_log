@@ -27,11 +27,17 @@
       </div>
       <div class="card-body">
         {{ entry.text|linebreaks }}
+        {% if entry.doc %}
+          <a href="{{ entry.doc.url }}" target="_blank">
+            {{ entry.doc.name }}
+          </a>
+        {% endif %}
       </div>
     </div>
     {% empty %}
       <p>There are no entries for this topic yet.</p>
   {% endfor %}
-<!-- </ul> -->
 
+  {% load static %}
+  <img src="{% static 'learning_logs/nature.jpg' %}" alt="a nature img">
 {% endblock content %}

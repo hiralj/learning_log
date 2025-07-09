@@ -54,7 +54,7 @@ def new_entry(request, topic_id):
     if request.method != 'POST':
         form = EntryForm()
     else:
-        form = EntryForm(data=request.POST)
+        form = EntryForm(data=request.POST, files=request.FILES)
         if form.is_valid():
             # because EntryForm is different object then Entry
             # and we need to create a row in the Entry nu table
