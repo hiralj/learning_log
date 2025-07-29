@@ -2,7 +2,7 @@
 Learning Logs is a `Django` project from the book - Python Crash Course, by Eric Matthes. 
 
 ## What's Django?
-Django is a Python-based web framework which comes with "batteries included". What that means is that it comes built-in with many other things needed to build a website - it's own lightweight web server, ORM (= Object Relational Mapping) with support for PostgreSQL, MySQL, MariaDB, etc, Admin functionalities / pages, etc. `Flask` and `Bottle` are the lightweight siblings / alternatives of Django.
+Django is a Python-based web framework with "batteries included", meaning it comes with many other things built-in, needed to build a website. Such as it's own lightweight web server, ORM (= Object Relational Mapping) with support for PostgreSQL, MySQL, MariaDB, etc, Admin functionalities / pages, etc. `Flask` and `Bottle` are the lightweight siblings / alternatives of Django.
 
 ### Doc
 - This index seems useful list of topics / subtopics: https://docs.djangoproject.com/en/5.2/topics/
